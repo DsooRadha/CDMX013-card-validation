@@ -1,0 +1,16 @@
+body {
+    height: 400px;
+    background-image: url("https://img.freepik.com/foto-gratis/densa-nube-oscura-tinta-bruma_23-2148102248.jpg?t=st=1657585360~exp=1657585960~hmac=55eac25a66d1c12cf636de38fbb02aace39eca2b2020bdf15a552944185cca05&w=740");
+  background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+.hariom {
+
+/* HariOmyogaenlinea 1 */
+position: absolute;
+width: 1410px;
+height: 1028px;
+
+background: url(HariOmyogaenlinea.jpg);
+}
