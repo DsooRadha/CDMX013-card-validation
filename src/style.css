@@ -1,0 +1,90 @@
+body {
+    background-color: #0E2645;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+.menudebotones {
+    text-align: center;
+}
+
+.nosotros {
+    background-color: #762837;
+    color: white;
+    font-size: 48px;
+    width: 23%;
+    height: 90px;
+    font-family: 'Just Another Hand', cursive;
+    font-style: normal;
+    
+}
+.horarios {
+    background-color: #762837;
+    color: white;
+    font-size: 48px;
+    width: 23%;
+    height: 90px;
+} 
+.paquetes {
+    background-color: #B58991;
+    color: white;
+    font-size: 48px;
+    width: 23%;
+    height: 90px;
+} 
+.dudas    {
+    background-color: #762837;
+    color: white;
+    font-size: 48px;
+    width: 23%;
+    height: 90px;
+}
+
+.despacioquellevoprisayvalidacion {
+    background-color: #EADFE1;
+    width: 2070px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.bloqueazul {
+    position:absolute;
+    width: 800px;
+    height: 700px;
+    left: 138px;
+    top: 1500px;
+    background: rgba(106, 188, 216, 0.73);
+    margin-top: -200px;
+    text-align: center;
+}
+
+.h3 {
+    color: #0E2645;
+    text-align: center;
+    font-size: 25px;
+}
+
+.secciondetarjeta {
+
+    position:absolute;
+    text-align: center;
+    left: 1000px;
+    top: 1400px;
+    
+    
+
+}
+
+.imagentarjeta {
+    align-items: center;
+}
+
+.lineatortugas {
+    position:absolute;
+    margin: auto;
+}
