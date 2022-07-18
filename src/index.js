@@ -1,11 +1,9 @@
- /* var numeroDeTarjeta=document.getElementById("botonDeValidar");
+var numeroDeTarjeta=document.getElementById("botonDeValidar");
 console.log(numeroDeTarjeta)
-numeroDeTarjeta.addEventListener("click",function(){
-    alert("hola");
-})   
-     REVISAR POR QUE NO FUNCIONO CON addEventListerner- Solo si sobra tiempo*/
+numeroDeTarjeta.addEventListener("click",capturandoNumeroDeTarjeta)   
 
-function capturandoNumeroDeTarjeta () {
+function capturandoNumeroDeTarjeta(event) {
+    event.preventDefault()
     var numeroDeTarjeta=document.getElementById("espacioParaElNumeroDeTarjeta").value;
      if (numeroDeTarjeta=="") {
         alert ("Introduce el numero de tarjeta como se muetra en la imagen de arriba")
