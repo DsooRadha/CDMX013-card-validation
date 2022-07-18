@@ -1,12 +1,26 @@
+HARI OM - YOGA EN LINEA
+Son un grupo practicantes asiduos de yoga con  mas de 10 años de experiencia como docentes, que decidio dar un paso a lo diigital. Ofreciendo la posibilidad de seguir cuidadndo te ti, de tu mente y tu cuerpo mediante una practica regular y en la comodidad de tu casa sin tener que desplazarte, o exponerte a algun inconveniente. Transformando el tiempo de translado a un tiempo de autocuidado.
+Volviendo la mirada a uno mismo, a habitar el tan afamado aquí y al ahora.
 
-Cualquier Duda nos puedes contactar en:
-hariom_pl@gmail.com
+Quiénes son los principales usuarios de producto.
+Adultos entre 20 -75 años y empresas que buscan una alternativa para actar las modificaciones de la ley federal del trabajo (2019) ofrecienco pausas laborales a sus empelados. 
 
-Imagen de tortuga yoga paquete 4
-https://images.vexels.com/media/users/3/291565/isolated/lists/ee18af21f7c4e266a2dcca99bc8d8552-lindo-personaje-de-pose-de-yoga-de-tortuga.png
+Cuáles son los objetivos de estos usuarios en relación con tu producto.
+PERSONAS
+-Bienestar
+-Manejo del estres
+-Fortalecimiento
+-Consciencia de si mismo 
 
-imagen de tarjeta no valida
-https://images.pexels.com/photos/5992867/pexels-photo-5992867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+EMPRESAS
+-Evitan el Bournout
+- Y cumplen con los estatutos de la Ley federal del trabajo
+-Aumenta la productividad y motivacion del pesonal
+-Mejora el ambiente laboral 
+-Promueve la creatividad
 
-imagen de tarjeta valida 
-https://images.pexels.com/photos/6697252/pexels-photo-6697252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Los conecta de una manera eficaz y rapida, con quienes les pueden ayudar a alcanzar sus objetivos. Eficientando tiempos y disminuyendo riesgos.
+
+De modo tal que sus servicios al ser completamente en linea, se vuelve incongruente que su pago requiera ser presencial. 
