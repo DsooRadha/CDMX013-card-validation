@@ -4,193 +4,159 @@ body {
     background-size: cover;
 }
 
-    div#padre {
+    #padre {
         background-color:  #0E2645;
         margin: auto;
         margin-top: 25px;
         margin-bottom: 25px;
-        width: 1395px;
-        height: 1365px;
+        width: 1350px;
+        height: 1350px;
         border: 6px solid  #762837;
         border-style: ridge;
-        padding: 5px;
-        padding-top: 5px;
-        padding-bottom: 3px;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-    div#portada {
+    #portada {
         width: 100%;
     }
 
-    div#menuDeBotones {
+    #menuDeBotones {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    width: auto;
-     /*
-    align-items: center; /* No logro alinear los botones en el centro* HELP!!*/
-    padding:3px;
+    width: 100%;
+    align-items: center; 
+    margin-top: 30px;
     }
-       
-        .nosotros {
+        .botonRojo {
         background-color: #762837;
         color: white;
-        font-size: 30px;
-        width: 25%;
-        height: 70px;
+        font-size: 35px;
+        height: 80px;
+        width: 336px;
         font-family: 'Just Another Hand';
         font-style: normal;
-        margin-left: -3.5px;
+        align-items: center;
+        cursor: pointer;
+        
         }
 
-        .horarios {
-        background-color: #762837;
-        color: white;
-        font-size: 30px;
-        width: 25%;
-        height: 70px;
-        font-family: 'Just Another Hand';
-        margin-left: -3.5px;
-        }  
-
-        .paquetes {
+        .botonSeleccionado {
         background-color: #B58991;
         color: white;
-        font-size: 30px;
-        width: 25%;
-        height: 70px;
+        font-size: 35px;
+        height: 80px;
+        width: 336px;
         font-family: 'Just Another Hand';
-        margin-left: -3.5px;  
+        font-style: normal;
+        align-items: center;
+        cursor: pointer;
+        border: none; 
         } 
-        .dudas    {
-        background-color: #762837;
-        color: white;
-        font-size: 30px;
-        width: 25%;
-        height: 70px;
-        font-family: 'Just Another Hand';
-        margin-left: -3.5px;
-        }
 
-    div#columnas {
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    color: #0E2645;
-    font-size: 25px;
-    background-color: #EADFE1;
-    justify-content: space-around;
-    }
-
-    div#areaCambiante {
-    background-color: #EADFE1;
-    height: 530px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-
-        div#despacioQueLlevoPrisa{
-        background: rgba(88, 168, 204, 0.73);
-        width:  1300px;
-        height: auto;
-        border-radius: 50px;
-        flex-direction: column;
-        justify-items: center;
-        margin: 30px;
-        margin-left: 120px;
-        }
+        #areaCambiante {
+        background-color: #EADFE1;
+        padding: 10px;
+        display: table;
         
-        #tortuga {
-            margin-left: 25%; /*Revisar que pasa con imagenes y botones son misteriosos para centrar justify-content: center;*/
         }
 
-        div#secciondeTarjeta {
-            
-            width: 600;
-            height: auto;
-            margin-right: 50px;  
-            align-items: center;
-            justify-items: center;
-            margin: 30px;
-            
-        }
+            #columna {
+                padding: 10px;
+                float: left;
+                width: 48.4%;   
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                flex-direction:column;
+            }
 
-        #imagenTarjeta {
-            width: 40%;
-            align-items: center;
-            margin-left: 30%;
-        }
+            #rectangulo {
+               background: url('Rectangle\ 25.png');
+                width:  70%;
+                height: auto;
+                border-radius: 50px;
+                padding: 20px;
+                margin: 10px;
+                display: inline;
+                align-items: center;
+                
+                
+                
+            }
 
-
-.lineatortugas {
-    position:absolute;
-    width: 92%;
-    height: auto;
-    top: 1280px;
+#tarjetaInvalida {
+    width: 25%;
+    align-self: center;
     display: none;
 }
 
-div#tarjetaInvalida{
-
-    background-color: rgb(82, 4, 127);
-    display: flex;
-    padding: 50px;
-    height: 530px;
-    align-items: flex-start;
-    
-}
-
-.tarjetaInvalida {
-    width: 25%;
-    align-self: center;
-}
-
-div#tarjetaValida {
+#tarjetaValida {
     background-color: rgb(119, 6, 115);
-    display: flex;
+    display: none;
     padding: 50px;
     height: 530px;
     align-items: flex-start;
     align-content: center;
 }
 
-h3 {
-
-    font-family: 'Galindo';
-    font-size: 28px;
-    line-height: .4;
-    text-align:Center;
-    color:#0E2645;
-
-}
-
-h4 {
-    color: #0E2645;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Helvetica';
-    font-size: 25px;
-    line-height: 1;
-}
 
 p{
     color: #0E2645;
     text-align: center;
     font-weight: bold;
     font-family: 'Helvetica';
-    font-size: 22px;
+    font-size: 20px;
     line-height: .4;
 }
- 
-div#pieDePagina {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+
+p.ptitle {
+    font-family: 'Galindo';
+    font-size: 25px;
+    font-weight: bold;
 }
 
-a {
-    color: rgb(187, 224, 254);
-    font-size: 20px;
-    font-family: 'Just Another Hand';
-    margin: 20px;
+p.p1{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 25px;
 }
+
+#espacioParaElNumeroDeTarjeta {
+    background-color:  #B58991;
+    color: white;
+    width: 55%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+
+#botonDeValidar {
+   
+    background-color: #5186ae;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Just Another Hand';
+    font-size: 25px;
+    border-radius: 8px;
+   
+}
+
+#pieDePagina {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 18px;
+}
+
+    a {
+    color: rgb(137, 174, 204);
+    font-size: 25px;
+    font-family: 'Just Another Hand';
+    margin: 25px;
+    }

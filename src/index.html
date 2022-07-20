@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />      
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
   </head>
   <body>
     <header></header>
@@ -13,47 +14,41 @@
     
     <div id="padre">
         <div id="portada">
-            <img class= "hariom" src="portadahariom.jpg"  style="width:100%">
+            <img src="portadahariom.jpg"  style="width:100%">
         </div>
 
         <div id="menuDeBotones"> 
-            <button class="nosotros" type="button">NOSOTROS</button>
-            <button class="horarios" type="button">HORARIOS</button>
-            <button class="paquetes" type="button">PAQUETES</button>
-            <button class="dudas" type="button">DUDAS</button>
+            <div ><button class="botonRojo" type="button">NOSOTROS</button></div>
+            <div><button class="botonRojo" type="button">HORARIOS</button></div>
+            <div><button class="botonSeleccionado" type="button">PAQUETES</button></div>
+            <div><button class="botonRojo" type="button">DUDAS</button></div>
         </div>
-
-        <div id="columnas">
-          <p>Paso 1. YA SELECCIONASTE TU PAQUETE</p>
-          <p>Paso 2. VALIDA TU TARJETA          </p>
-        </div>
-
         <div id="areaCambiante">
-            <div id="despacioQueLlevoPrisa"> 
-                <br><h3>Paquete 4.</h3> 
-                <h3>DESPACIO QUE LLEVO PRISA</h3>
-                <img id="tortuga" src="https://images.vexels.com/media/users/3/291565/isolated/lists/ee18af21f7c4e266a2dcca99bc8d8552-lindo-personaje-de-pose-de-yoga-de-tortuga.png">
-                <p>(Dos clases x Semana)</p>
-                <p>$800 mxn mensuales</p> 
+          <div id="columna"> 
+              <p class="ptitle">Paso 1. SELECCIONASTE TU PAQUETE</p>
+              <div id="rectangulo">
+              <p class="p1">PAQUETE 4.</p> 
+              <p class="p1">DESPACIO QUE LLEVO PRISA</p>
+              <img src="https://images.vexels.com/media/users/3/291565/isolated/lists/ee18af21f7c4e266a2dcca99bc8d8552-lindo-personaje-de-pose-de-yoga-de-tortuga.png" style= "width: 50%;" >
+              <p class="p1Sub">(Dos clases x Semana)</p>
+              <p class="p1Sub">$800 mxn mensuales</p> 
             </div>
+           </div>
     
-            <div id="secciondeTarjeta"> 
-                <form>
-                  <h4> Ingresa tu número de tarjeta. </h4>
-                  <img id= "imagenTarjeta" src="card.png" >
-                  <p><input id= "espacioParaElNumeroDeTarjeta" type="text"  maxlength="16" minlength="16" placeholder="Ingresa tu número AQUI"></p>
-                  <p><button id="botonDeValidar" type="button"> VALIDAR </button></p>
+            <div id="columna"> 
+              <p class="ptitle">Paso 2. VALIDA TU TARJETA</p>
+                <form >
+                  <br> <img src="card.png" style= "width: 50%;" ><br>
+                  <input id= "espacioParaElNumeroDeTarjeta" type="text"  maxlength="16" minlength="16" placeholder="Ingresa tu número AQUI">
+                  <br><p><button id="botonDeValidar" type="button"> VALIDAR </button></p>
                 </form>
-            </div>
-            <div id="lineaTortugas">
-                  <img class= "lineatortugas" src="Group 1.png">
             </div>
           </div>
   
         <div id="tarjetaInvalida"> 
             <p>PRUEBA CON OTRA TARJETA</p>
-            <img class= "tarjetaInvalida" src="anjalimudra.png">
-            <p><button class="botonDeReintentar"  type="button"> REINTENTAR </button></p>
+            <img src="anjalimudra.png">
+            <p><button   type="button"> REINTENTAR </button></p>
         </div>
 
         <div id="tarjetaValida"> 
