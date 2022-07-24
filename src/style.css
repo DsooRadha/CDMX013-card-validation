@@ -58,7 +58,7 @@ body {
         #areaCambiante {
         background-color: #EADFE1;
         padding: 10px;
-        display: table;
+        display: table
         
         }
 
@@ -86,20 +86,29 @@ body {
                 
                 
             }
-
-#tarjetaInvalida {
-    width: 25%;
-    align-self: center;
+#pantallaDos {
+    background-color: #EADFE1;
+    width: 95%;
+    height: 500px;
+    padding: 30px;
     display: none;
+}
+#tarjetaInvalida {
+    padding: 10px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    display: none;
+    flex-direction:column;
 }
 
 #tarjetaValida {
-    background-color: rgb(119, 6, 115);
+    padding: 10px;
+    width: auto;
+    align-items: center;
+    text-align: center;
     display: none;
-    padding: 50px;
-    height: 530px;
-    align-items: flex-start;
-    align-content: center;
+    flex-direction:column;
 }
 
 
@@ -122,6 +131,13 @@ p.p1{
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 25px;
 }
+
+p.p2{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 40px;
+}
+
+
 
 #espacioParaElNumeroDeTarjeta {
     background-color:  #B58991;
@@ -151,7 +167,8 @@ p.p1{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    margin-top: 18px;
+    margin-top: 12px;
+    
 }
 
     a {

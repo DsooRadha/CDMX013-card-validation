@@ -52,9 +52,17 @@ validator.isValid('4083952015263');
 
 // en el futuro true o false
 
+/*
+maskify.function(numeroDeTarjeta){
+        let cuatroDigitos = numeroDeTarjeta.slice(-4); //cuando es negativo empieza del final de la cadena .slice()
+        console.log(cuatroDigitos + "probandoslice");
+        let remplazo = numeroDeTarjeta.slice(0,-4);
+        let numerosEnmascarados= numeroDeTarjeta.replace(remplazo,"🐱".repeat(numeroDeTarjeta.length));
+       // return numerosEnmascarados
+        console.log(numerosEnmascarados +"numerosenmascardos");
+       
 
-
-
+*/
 
 
 // ...
@@ -64,38 +72,24 @@ export default validator;
 
 
 /*
-LO SIGUIENTE SERÍA...
-    BUCLES
-        var realDigits = digits.map(Number)
-        Definiendo numeros pares if (variableDefinidaPreviamente [i] %2 == 0);
-            for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización])
-            instrucción
-    Otro metodo podria ser .forEach
-    variable.forEach(function(pares)){
-      console.log (pares*2)
-    }
-       
-    con IF el elemento tiene un valor= 2 --> n*2
-     otro   IF el resultado de esta operacion es > 9 
-        se volveria a segmentar o volver un arreglo   con   
-        
-                        n.split("")
-        
-        y el resultado= elemento1+elemento2
-    LO SIGUIENTE SERIA...
-        var sumarTodosLosElementos= elemento1 + elemento2 + elemento3 ...elemento16
-        
-            IF  sumarTodosLosElementos/10 = 0 -->True
-            IF  sumarTodosLosElementos/10 ≠ 0 -->False
+
     RESULTADO
-        true=Mostar el div de Continuar ¡Tu tarjeta es valida
+        true=Mostar el div de Continuar con la funcion de ¡Tu tarjeta es valida
         false=Mostrar el div de Intenta con otro tarjeta
-        *existe  this.value?
+        
         Este algoritmo LUHN
         - Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]);
         - a todos los números que ocupan una posición par se les debe multiplicar por dos,
         - si este número es mayor o igual a 10, debemos sumar los dígitos del resultado; 
         -el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
+       if resultadofinal=0 {
+          funcion(tarjetavalida);
+        }
+      else{
+          funcion(tarjetaInvalida);
+        }
+
+
 
     FUNCION COLLBACK  ---.MAP
     Los callbacks aseguran que una función no se va a ejecutar antes de que se complete una tarea, 
