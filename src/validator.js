@@ -1,12 +1,12 @@
 // toda la logica 
 
-    /*
-    let digitos = (numeroInvertido.split("")).map(Number);
-    console.log(digitos);
-    for (let i = 0; i < digitos.length; i + 2) {
-      let pares = digitos[i]*2
-      console.log(pares + "pares")
-    }
+/*
+let digitos = (numeroInvertido.split("")).map(Number);
+console.log(digitos);
+for (let i = 0; i < digitos.length; i + 2) {
+  let pares = digitos[i]*2
+  console.log(pares + "pares")
+}
 */
 
 const validator = {
@@ -15,15 +15,15 @@ const validator = {
     const arregloCadena = [...numeroInvertido]; /*Spreadarray solo estoy clonando. Si no lo usas y solo v1=v2 tu array original se ve afectado. 
     Tiene mas uso: Fusionar, clonar, Iterables a matriz, puede convertir un objeto-set- a matriz*,___otroque no recuerd*/
     console.log(arregloCadena);
-    const arrayAllNumbers= [];
+    const arrayAllNumbers = [];
     let character = ''; //se escribe asi cuando va a ser un string con corchetes cuando es de number
     for (let i = 0; i < numeroInvertido.length; i++) { //la estructura de los for es ([espresiónInicial]; [expresionCondicional]; [expresiondeActualización]) es decir desde donde va empezar a contar, la condicion y como va a ir avanzando
       character = numeroInvertido.charAt(i); // devuelve en un nuevo String el carácter UTF-16 de una cadena. En este caso la posición
-    let numero = parseInt(character) //lo vuelve numero al valor de character
+      let numero = parseInt(character) //lo vuelve numero al valor de character
       if (i % 2 !== 0) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
-       // arregloCadena[i] = "PAR";
+        // arregloCadena[i] = "PAR";
         var pares = numero * 2;
-        if (pares >= 10) {
+        if (pares > 9) {
           pares = pares - 9;
           arrayAllNumbers.push(pares);
         } // Si tu imprimes la consola ante de darle todas las intrucciones te va imprimiendo hasta los pasos anteriores no el paso final
@@ -34,34 +34,13 @@ const validator = {
         console.log(numero, "impar");
       }
     }
-        console.log(arrayAllNumbers,"todoslosnumeros");
-      
-        function sumando (arrayAllNumbers)
-        let suma=0;
-        for (let i=0; i<arrayAllNumbers.length; i++) {
-          if (arrayAllNumbers[i]>0) {
-            suma +=arrayAllNumbers[i]
-          }
-        console.log(suma);
+    console.log(arrayAllNumbers, "todoslosnumeros");
 
-       // let todosLosNumeros=[...arrayPares, numero];
-        //console.log(todosLosNumeros, "¿que saldra?");
+    let total = arrayAllNumbers.reduce((a, b) => a + b);
+    console.log(total);
 
-        //let todosLosNumeros=[...numero, ...pares];
-        //console.log(todosLosNumeros+"impar");
-          //YA INTENTE ESTAS DOSS FORMAS DE ABAJO O Y NO FUNCIONA O___o
-        //let todosLosNumeros=[...numeros, ...pares];
-        //let todosLosNumeros=numero.concat(pares);//arr1 = [...arr1, ...arr2];
-        //console.log(todosLosNumeros);
-      
-    
-
-
-    /*
-        function suma (pares,numero)
-        
-          console.log(arregloCadena);
-        */
+    let casiLlegandoalFinal= total%10;
+    console.log(casiLlegandoalFinal);
 
     /*     function sumaDePares(pares){
                     let suma=0;
@@ -76,9 +55,9 @@ const validator = {
                     */
 
   }
-  numFunctions: 2
+  //numFunctions: 2
 }
-}
+
 validator.isValid('4083952015263');
 
 
