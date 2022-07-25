@@ -15,33 +15,35 @@ const validator = {
     const arregloCadena = [...numeroInvertido]; /*Spreadarray solo estoy clonando. Si no lo usas y solo v1=v2 tu array original se ve afectado. 
     Tiene mas uso: Fusionar, clonar, Iterables a matriz, puede convertir un objeto-set- a matriz*,___otroque no recuerd*/
     console.log(arregloCadena);
-    const arrayPares= [];
+    const arrayAllNumbers= [];
     let character = ''; //se escribe asi cuando va a ser un string con corchetes cuando es de number
     for (let i = 0; i < numeroInvertido.length; i++) { //la estructura de los for es ([espresiónInicial]; [expresionCondicional]; [expresiondeActualización]) es decir desde donde va empezar a contar, la condicion y como va a ir avanzando
       character = numeroInvertido.charAt(i); // devuelve en un nuevo String el carácter UTF-16 de una cadena. En este caso la posición
     let numero = parseInt(character) //lo vuelve numero al valor de character
-      if (i % 2 == 0) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
+      if (i % 2 !== 0) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
        // arregloCadena[i] = "PAR";
         var pares = numero * 2;
-        if (pares > 9) {
+        if (pares >= 10) {
           pares = pares - 9;
-          arrayPares.push(pares);
+          arrayAllNumbers.push(pares);
         } // Si tu imprimes la consola ante de darle todas las intrucciones te va imprimiendo hasta los pasos anteriores no el paso final
         console.log(pares, "par");
       }
       else {   //todo lo que no entra en la condicion if lo escupe acá
+        arrayAllNumbers.push(numero);
         console.log(numero, "impar");
-        console.log (arrayPares, "Que es esto")
-      /*  
-        function sumando (arregloCadena)
+      }
+    }
+        console.log(arrayAllNumbers,"todoslosnumeros");
+      
+        function sumando (arrayAllNumbers)
         let suma=0;
-        for (let i=0; i<arregloCadena.length; i++) {
-          if (arregloCadena[i]>0) {
-            suma +=arregloCadena[i]
+        for (let i=0; i<arrayAllNumbers.length; i++) {
+          if (arrayAllNumbers[i]>0) {
+            suma +=arrayAllNumbers[i]
           }
-        }
         console.log(suma);
-*/
+
        // let todosLosNumeros=[...arrayPares, numero];
         //console.log(todosLosNumeros, "¿que saldra?");
 
@@ -51,8 +53,8 @@ const validator = {
         //let todosLosNumeros=[...numeros, ...pares];
         //let todosLosNumeros=numero.concat(pares);//arr1 = [...arr1, ...arr2];
         //console.log(todosLosNumeros);
-      }
-    }
+      
+    
 
 
     /*
@@ -73,10 +75,10 @@ const validator = {
             o funcion reduce
                     */
 
-  },
+  }
   numFunctions: 2
 }
-
+}
 validator.isValid('4083952015263');
 
 
