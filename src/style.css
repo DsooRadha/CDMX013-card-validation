@@ -4,102 +4,114 @@ body {
     background-size: cover;
 }
 
-    #padre {
-        background-color:  #0E2645;
-        margin: auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 1350px;
-        height: 1350px;
-        border: 6px solid  #762837;
-        border-style: ridge;
-        padding: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+#padre {
+    background-color: #0E2645;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 1350px;
+    height: 1350px;
+    border: 6px solid #762837;
+    border-style: ridge;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-    #portada {
-        width: 100%;
-    }
+#portada {
+    width: 100%;
+}
 
-    #menuDeBotones {
+#menuDeBotones {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: center; 
+    align-items: center;
     margin-top: 30px;
-    }
-        .botonRojo {
-        background-color: #762837;
-        color: white;
-        font-size: 35px;
-        height: 80px;
-        width: 336px;
-        font-family: 'Just Another Hand';
-        font-style: normal;
-        align-items: center;
-        cursor: pointer;
-        
-        }
+}
 
-        .botonSeleccionado {
-        background-color: #B58991;
-        color: white;
-        font-size: 35px;
-        height: 80px;
-        width: 336px;
-        font-family: 'Just Another Hand';
-        font-style: normal;
-        align-items: center;
-        cursor: pointer;
-        border: none; 
-        } 
+.botonRojo {
+    background-color: #762837;
+    color: white;
+    font-size: 35px;
+    height: 80px;
+    width: 336px;
+    font-family: 'Just Another Hand';
+    font-style: normal;
+    align-items: center;
+    cursor: pointer;
 
-        #areaCambiante {
-        background-color: #EADFE1;
-        padding: 10px;
-        display: table
-        
-        }
+}
 
-            #columna {
-                padding: 10px;
-                float: left;
-                width: 48.4%;   
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                display: flex;
-                flex-direction:column;
-            }
+.botonSeleccionado {
+    background-color: #B58991;
+    color: white;
+    font-size: 35px;
+    height: 80px;
+    width: 336px;
+    font-family: 'Just Another Hand';
+    font-style: normal;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
 
-            #rectangulo {
-               background: url('Rectangle\ 25.png');
-                width:  70%;
-                height: auto;
-                border-radius: 50px;
-                padding: 20px;
-                margin: 10px;
-                display: inline;
-                align-items: center;
-                
-                
-                
-            }
+#areaCambiante {
+    background-color: #EADFE1;
+    padding: 10px;
+    display: table;
+
+}
+
+#columnaUno {
+    padding: 10px;
+    float: left;
+    width: 48.4%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#columnaDos {
+    padding: 10px;
+    float: left;
+    width: 48.4%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#rectangulo {
+    background: url('Rectangle\ 25.png');
+    width: 70%;
+    height: auto;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 10px;
+    display: inline;
+    align-items: center;
+
+
+
+}
+
 #pantallaDos {
     background-color: #EADFE1;
-    width: 95%;
-    height: 500px;
-    padding: 30px;
-    display: none;
+    padding: 10px;
+    display: block
 }
+
 #tarjetaInvalida {
     padding: 10px;
     width: auto;
     align-items: center;
     text-align: center;
     display: none;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 #tarjetaValida {
@@ -108,17 +120,17 @@ body {
     align-items: center;
     text-align: center;
     display: none;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 
-p{
+p {
     color: #0E2645;
     text-align: center;
     font-weight: bold;
     font-family: 'Helvetica';
     font-size: 20px;
-    line-height: .4;
+    line-height: .1;
 }
 
 p.ptitle {
@@ -127,12 +139,12 @@ p.ptitle {
     font-weight: bold;
 }
 
-p.p1{
+p.p1 {
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 25px;
 }
 
-p.p2{
+p.p2 {
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 40px;
 }
@@ -140,7 +152,7 @@ p.p2{
 
 
 #espacioParaElNumeroDeTarjeta {
-    background-color:  #B58991;
+    background-color: #B58991;
     color: white;
     width: 55%;
     padding: 10px;
@@ -149,10 +161,10 @@ p.p2{
     font-size: 24px;
     justify-content: center;
     text-align: center;
-  }
+}
 
 #botonDeValidar {
-   
+
     background-color: #5186ae;
     color: white;
     padding: 10px 100px;
@@ -160,7 +172,32 @@ p.p2{
     font-family: 'Just Another Hand';
     font-size: 25px;
     border-radius: 8px;
-   
+
+}
+
+
+#reintentar {
+
+    background-color: #5186ae;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Just Another Hand';
+    font-size: 25px;
+    border-radius: 8px;
+
+}
+
+#continuar {
+
+    background-color: #5186ae;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Just Another Hand';
+    font-size: 25px;
+    border-radius: 8px;
+
 }
 
 #pieDePagina {
@@ -168,12 +205,12 @@ p.p2{
     justify-content: space-around;
     align-items: flex-end;
     margin-top: 12px;
-    
+
 }
 
-    a {
+a {
     color: rgb(137, 174, 204);
     font-size: 25px;
     font-family: 'Just Another Hand';
     margin: 25px;
-    }
+}

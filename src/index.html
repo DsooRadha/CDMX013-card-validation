@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida. HARIOM YOGA EN LINEA - PAUSAS LABORALES</title>
-    <link rel="stylesheet" href="style.css" />      
-    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Just+Another+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    
-    <div id="padre">
-        <div id="portada">
-            <img src="portadahariom.jpg"  style="width:100%">
-        </div>
 
-        <div id="menuDeBotones"> 
-            <div ><button class="botonRojo" type="button">NOSOTROS</button></div>
-            <div><button class="botonRojo" type="button">HORARIOS</button></div>
-            <div><button class="botonSeleccionado" type="button">PAQUETES</button></div>
-            <div><button class="botonRojo" type="button">DUDAS</button></div>
-        </div>
-        <div id="areaCambiante">
-          <div id="columna"> 
-              <p class="ptitle">Paso 1. SELECCIONASTE TU PAQUETE </p>
-              <div id="rectangulo">
-              <p class="p1">PAQUETE 4.</p> 
-              <p class="p1">DESPACIO QUE LLEVO PRISA</p>
-              <img src="https://images.vexels.com/media/users/3/291565/isolated/lists/ee18af21f7c4e266a2dcca99bc8d8552-lindo-personaje-de-pose-de-yoga-de-tortuga.png" style= "width: 50%;" >
-              <p class="p1Sub">(Dos clases x Semana)</p>
-              <p class="p1Sub">$800 mxn mensuales</p> 
-            </div>
-           </div>
-    
-            <div id="columna"> 
-              <p class="ptitle">Paso 2. VALIDA TU TARJETA</p>
-                <form >
-                  <br> <img src="card.png" style= width:50% ><br>
-                  <label><input id= "espacioParaElNumeroDeTarjeta" type="text"   maxlength="16" minlength="16" placeholder="Ingresa tu número AQUI"></label>
-                  <br><p><button id="botonDeValidar" type="button"> VALIDAR </button></p>
-                </form>
-            </div>
-          </div>
-        <div id="pantallaDos">
-        <div id="tarjetaInvalida"> 
-            <p class=p2>PRUEBA CON OTRA TARJETA</p>
-            <p id="numeroEnmascarado"></p>
-            <img src="anjalimudra.png"style= width:25%>
-            <p><button id="botonDeValidar" type="submit"> REINTENTAR </button></p>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida. HARIOM YOGA EN LINEA - PAUSAS LABORALES</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Just+Another+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
 
-        <div id="tarjetaValida"> 
-            <p class=p2>¡¡¡TU TARJETA HA SIDO VALIDADA!!!</p>
-            <p id="numeroEnmascarado"></p>
-            <img class= "tarjetavalida" src="experimentoloto.png" style= width:20%>
-            <p><button id="botonDeValidar"  type="button"> CONTINUAR </button></p>
+<body>
+  <header></header>
+  <main></main>
+
+  <div id="padre">
+    <div id="portada">
+      <img src="portadahariom.jpg" style="width:100%">
+    </div>
+
+    <div id="menuDeBotones">
+      <div><button class="botonRojo" type="button">NOSOTROS</button></div>
+      <div><button class="botonRojo" type="button">HORARIOS</button></div>
+      <div><button class="botonSeleccionado" type="button">PAQUETES</button></div>
+      <div><button class="botonRojo" type="button">DUDAS</button></div>
+    </div>
+    <div id="areaCambiante">
+      <div id="columnaUno">
+        <p class="ptitle">Paso 1. SELECCIONASTE TU PAQUETE </p>
+        <div id="rectangulo">
+          <p class="p1">PAQUETE 4.</p>
+          <p class="p1">DESPACIO QUE LLEVO PRISA</p>
+          <img
+            src="https://images.vexels.com/media/users/3/291565/isolated/lists/ee18af21f7c4e266a2dcca99bc8d8552-lindo-personaje-de-pose-de-yoga-de-tortuga.png"
+            style="width: 50%;">
+          <p class="p1Sub">(Dos clases x Semana)</p>
+          <p class="p1Sub">$800 mxn mensuales</p>
         </div>
       </div>
-        <div id="pieDePagina">
-            <footer >
-                <a href="https://www.blancoyoga.com/terminos-y-condiciones/">TERMINOS Y CONDICIONES</a>
-                <a>|</a>
-                <a href="https://www.blancoyoga.com/aviso-de-privacidad/">AVISO DE PRIVACIDAD</a> 
-            </footer>
-        </div>
-        
+
+      <div id="columnaDos">
+        <p class="ptitle">Paso 2. VALIDA TU TARJETA</p>
+        <form>
+          <br> <img src="card.png" style="width:50%"><br>
+          <label><input id="espacioParaElNumeroDeTarjeta" type="text" maxlength="16" minlength="16"
+              placeholder="Ingresa tu número AQUI"></label>
+          <br>
+          <p><button id="botonDeValidar" type="button"> VALIDAR </button></p>
+        </form>
+      </div>
+    </div>
+    <div id="pantallaDos">
+      <div id="tarjetaInvalida">
+        <p class="ptitle">NUMERO ES INVALIDO</p>
+        <p id="numeroEnmascarado"></p>
+        <p class="p2">PRUEBA CON OTRA TARJETA</p>
+        <img src="anjalimudra.png" style="width:23%">
+        <p><button id="reintentar" type="reset"> REINTENTAR </button></p>
+      </div>
+
+      <div id="tarjetaValida">
+        <br>
+        <p class="ptitle">¡¡¡TU TARJETA HA SIDO VALIDADA!!!</p>
+        <p class="p2" id="numeroEnmascaradoDos"></p>
+        <img class="tarjetavalida" src="experimentoloto.png" style="width:23%">
+        <p><button id="continuar" type="button"> CONTINUAR </button></p>
+      </div>
+    </div>
+    <div id="pieDePagina">
+      <footer>
+        <a href="https://www.blancoyoga.com/terminos-y-condiciones/">TERMINOS Y CONDICIONES</a>
+        <a>|</a>
+        <a href="https://www.blancoyoga.com/aviso-de-privacidad/">AVISO DE PRIVACIDAD</a>
+      </footer>
+    </div>
+
   </div>
   <script src="index.js" type="module"></script>
-  </body>
+</body>
+
 </html>
