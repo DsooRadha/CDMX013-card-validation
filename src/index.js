@@ -2,11 +2,12 @@ import validator from './validator.js';
 
 console.log(validator);
 
-let numeroDeTarjeta= document.getElementById("botonDeValidar");
-numeroDeTarjeta.addEventListener("click", function (e) { //parametro de una funcion
+let cardNumber= document.getElementById("botonDeValidar");
+
+cardNumber.addEventListener("click", function (e) { //parametro de una funcion
     e.preventDefault() //evita que se corra la funcion por accidente como cuando recargas la pagina XD
-    let numeroDeTarjeta = document.getElementById("espacioParaElNumeroDeTarjeta").value; //el valorde ese elemento, que en este caso es el inputtext
-    if (numeroDeTarjeta == "") { //si este elemento esta vacio al darle click al boton arroja un alert 
+    let cardNumber = document.getElementById("espacioParaElNumeroDeTarjeta").value; //el valorde ese elemento, que en este caso es el inputtext
+    if (cardNumber == "") { //si este elemento esta vacio al darle click al boton arroja un alert 
         alert("Introduce el numero de TU tarjeta. Como se muetra en la imagen de arriba")
     }
 
@@ -45,7 +46,7 @@ function validacion (){
         tarjetaInvalida.style="display:flex"
 */
 
-    let resultValid = validator.isValid(numeroDeTarjeta)
+    let resultValid = validator.isValid(cardNumber)
     console.log(resultValid)
 });
 
