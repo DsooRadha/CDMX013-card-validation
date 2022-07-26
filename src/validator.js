@@ -49,9 +49,9 @@ const validator = {
       sum += arrayAllNumbers[i]; //suma = suma + arrayAllNumbers[i];
     }
     console.log(sum);
-
     let casiAcabamos = sum % 10;
     console.log(casiAcabamos);
+    
     if (sum % 10 == 0) {
       return true      
     }
@@ -59,17 +59,9 @@ const validator = {
       return false
     }
   }
-}
-/*
-validator.maskify.function(numeroDeTarjeta){
-  let cuatroDigitos = numeroDeTarjeta.slice(-4); //cuando es negativo empieza del final de la cadena .slice()
-  console.log(cuatroDigitos + "probandoslice");
-  let remplazo = numeroDeTarjeta.slice(0,-4);
-  let numerosEnmascarados= numeroDeTarjeta.replace(remplazo,"🐱".repeat(numeroDeTarjeta.length));
-  return numerosEnmascarados
+ 
 }
 
-*/
   
 
 
@@ -86,20 +78,4 @@ validator.maskify.function(numeroDeTarjeta){
         console.log(numerosEnmascarados +"numerosenmascardos");
 */
 
-
-
-
-
 export default validator;
-
-
-/*
-  
-        -el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
-       if resultadofinal=0 {
-          funcion(tarjetavalida);
-        }
-      else{
-          funcion(tarjetaInvalida);
-        }
- */
