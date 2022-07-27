@@ -60,26 +60,27 @@ body {
     background-color: #EADFE1;
     padding: 10px;
     display: table;
+    height: 40%;
 
 }
 
 #columnaUno {
+    margin-top: 20px;
     padding: 10px;
     float: left;
     width: 48.4%;
     align-items: center;
-    justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 #columnaDos {
+    margin-top: 20px;
     padding: 10px;
     float: left;
     width: 48.4%;
     align-items: center;
-    justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -94,15 +95,12 @@ body {
     margin: 10px;
     display: inline;
     align-items: center;
-
-
-
 }
 
 #pantallaDos {
     background-color: #EADFE1;
     padding: 10px;
-    display: block
+    display: none
 }
 
 #tarjetaInvalida {
@@ -121,6 +119,7 @@ body {
     text-align: center;
     display: none;
     flex-direction: column;
+    height: 515px;
 }
 
 
@@ -204,7 +203,7 @@ p.p2 {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    margin-top: 12px;
+    margin-top: 15px;
 
 }
 

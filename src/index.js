@@ -46,4 +46,3 @@ function soloNumeros(e){
     e.preventDefault();
   }
 }
-
