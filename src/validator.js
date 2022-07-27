@@ -18,13 +18,13 @@ const validator = {
     for (let i = 0; i < reverseNumber.length; i++) { //la estructura de los for es ([espresiónInicial]; [expresionCondicional]; [expresiondeActualización]) es decir desde donde va empezar a contar, la condicion y como va a ir avanzando
       character = reverseNumber.charAt(i); // devuelve en un nuevo String el carácter UTF-16 de una cadena. En este caso la posición
       let numberDigits = parseInt(character) //lo vuelve numero al valor de character
-      if (i % 2 !== 0) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
+      if (i % 2 == 0) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
         // arrayString[i] = "PAR";
         let pair = numberDigits * 2;
-        if (pair >= 10) { //acá porque 10 y no 9 sale lo mismo cuando lo cambio
+        if (pair >9) { //acá porque 10 y no 9 sale lo mismo cuando lo cambio
           pair = pair - 9;
           arrayAllNumbers.push(pair);
-        } // Si tu imprimes la consola ante de darle todas las intrucciones te va imprimiendo hasta los pasos anteriores no el paso final
+        } // Si tu imprimes la consola antes de darle todas las intrucciones te va imprimiendo hasta los pasos anteriores no el paso final
         //console.log(pair, "par");
       }
       else {   //todo lo que no entra en la condicion if lo escupe acá

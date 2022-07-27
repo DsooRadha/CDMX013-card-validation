@@ -10,9 +10,6 @@ botonDeValidar.addEventListener("click", function (e) { //parametro de una funci
     if (cardNumber == "") { //si este elemento esta vacio al darle click al boton arroja un alert 
         alert("Introduce el numero de TU tarjeta. Como se muetra en la imagen de arriba");
     }
-
-
-
     document.getElementById("areaCambiante").style.display = "none";
     document.getElementById("pantallaDos").style.display = "block";
 
@@ -31,7 +28,22 @@ botonDeValidar.addEventListener("click", function (e) { //parametro de una funci
 }
 
 );
+let botonDeReintentar = document.getElementById("reintentar");
+botonDeReintentar.addEventListener("click", function (e) {
+    e.preventDefault()
 
+    document.getElementById("areaCambiante").style.display = "table";
+    document.getElementById("pantallaDos").style.display = "none";
+}
+);
 
+let configurandoInput= document.getElementById("espacioParaElNumeroDeTarjeta");
+configurandoInput.addEventListener("keypress", soloNumeros, false);
 
+function soloNumeros(e){
+  var key = configurandoInput.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }
+}
 

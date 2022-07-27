@@ -44,7 +44,7 @@
         <form>
           <br> <img src="card.png" style="width:50%"><br>
           <label><input id="espacioParaElNumeroDeTarjeta" type="text" maxlength="16" minlength="16"
-              placeholder="Ingresa tu número AQUI"></label>
+              placeholder="Ingresa tu número AQUI" pattern="[0-9]+" > </label>
           <br>
           <p><button id="botonDeValidar" type="button"> VALIDAR </button></p>
         </form>
@@ -52,7 +52,7 @@
     </div>
     <div id="pantallaDos">
       <div id="tarjetaInvalida">
-        <p class="ptitle">NUMERO ES INVALIDO</p>
+        <p class="ptitle">EL NUMERO ES INVALIDO</p>
         <p id="numeroEnmascarado"></p>
         <p class="p2">PRUEBA CON OTRA TARJETA</p>
         <img src="anjalimudra.png" style="width:23%">

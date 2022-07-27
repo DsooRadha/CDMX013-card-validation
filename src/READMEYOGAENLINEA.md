@@ -39,5 +39,5 @@ A lxs usarixs los conecta de una manera eficaz y rapida, con quienes les pueden 
 
 De modo tal que sus servicios al ser completamente en linea, se vuelve incongruente que su pago requiera ser presencial.       
 
- >"LOKAH SAMASTAH SUKHINO BHAVANTU"  
+ >_"LOKAH SAMASTAH SUKHINO BHAVANTU"_  
  >¡QUE TODOS LOS SERES DE TODOS LOS UNIVERSOS SEAN FELICES Y PROSPEROS!
