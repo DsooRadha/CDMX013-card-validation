@@ -40,7 +40,6 @@ body {
     font-style: normal;
     align-items: center;
     cursor: pointer;
-
 }
 
 .botonSeleccionado {
@@ -148,8 +147,6 @@ p.p2 {
     font-size: 40px;
 }
 
-
-
 #espacioParaElNumeroDeTarjeta {
     background-color: #B58991;
     color: white;
@@ -163,7 +160,6 @@ p.p2 {
 }
 
 #botonDeValidar {
-
     background-color: #5186ae;
     color: white;
     padding: 10px 100px;
@@ -171,12 +167,10 @@ p.p2 {
     font-family: 'Just Another Hand';
     font-size: 25px;
     border-radius: 8px;
-
 }
 
 
 #reintentar {
-
     background-color: #5186ae;
     color: white;
     padding: 10px 100px;
@@ -184,11 +178,9 @@ p.p2 {
     font-family: 'Just Another Hand';
     font-size: 25px;
     border-radius: 8px;
-
 }
 
 #continuar {
-
     background-color: #5186ae;
     color: white;
     padding: 10px 100px;
@@ -196,7 +188,6 @@ p.p2 {
     font-family: 'Just Another Hand';
     font-size: 25px;
     border-radius: 8px;
-
 }
 
 #pieDePagina {
@@ -204,7 +195,6 @@ p.p2 {
     justify-content: space-around;
     align-items: flex-end;
     margin-top: 15px;
-
 }
 
 a {

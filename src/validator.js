@@ -8,8 +8,7 @@ for (let i = 0; i < digitos.length; i + 2) {
 */
 const validator = {
   isValid: function (cardNumber) {
-    console.log(typeof cardNumber);
-
+    // console.log(typeof cardNumber); te devuelve un Strings
     let reverseNumber = cardNumber.split("").reverse().join(""); //
     /* const arrayString = [...reverseNumber]; /*Spreadarray solo estoy clonando. Si no lo usas y solo v1=v2 tu array original se ve afectado. 
      Tiene mas uso: Fusionar, clonar, Iterables a matriz, puede convertir un objeto-set- a matriz*,___otroque no recuerdº
@@ -19,7 +18,7 @@ const validator = {
     for (let i = 0; i < reverseNumber.length; i++) { //la estructura de los for es ([espresiónInicial]; [expresionCondicional]; [expresiondeActualización]) es decir desde donde va empezar a contar, la condicion y como va a ir avanzando
       character = reverseNumber.charAt(i); // devuelve en un nuevo String el carácter UTF-16 de una cadena. En este caso la posición
       let numberDigits = parseInt(character) //lo vuelve numero al valor de character
-      if (i+1 % 2 == 0) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
+      if (i % 2 == 1) { //aca es la condicion "si" la posicion la divides entre dos ===0 es par 
         // arrayString[i] = "PAR";
         let pair = numberDigits * 2;
         if (pair > 9) { // o >=10
@@ -61,11 +60,15 @@ const validator = {
       return false
     }
   },
+
   maskify: function (cardNumber) {
-    let otrosNumeros=cardNumber.slice(0, 12);
+    let otrosNumeros = cardNumber.slice(0, 12);
+    //  console.log(otrosNumeros, "otronumeros");
     let remplazo = cardNumber.slice(0, -4);
-    let numerosEnmascarados = cardNumber.replace(remplazo, "🐱".repeat(otrosNumeros.length));
-    return numerosEnmascarados
+    //   console.log(remplazo, "reemplazo")
+    let numerosEnmascarados = cardNumber.replace(remplazo, "#".repeat(otrosNumeros.length));
+    //  console.log(numerosEnmascarados);
+    return numerosEnmascarados;
 
     /*
     PLAN B
@@ -74,16 +77,8 @@ const validator = {
         let pasoDos= numerosOcultos.map ((valor, posicion) =>
         posicion<cardNumber.length-4?"#":valor).join("");
         return pasoDos
-    PLAN C anventarse al precipicio XD
-            let numerosEnmascarados= numeroDeTarjeta.replace(remplazo,"#".repeat(numeroDeTarjeta.length));
     */
-
   }
-
-
-
-
-
 }
 
 export default validator;
