@@ -51,7 +51,7 @@ const validator = {
     for (let i = 0; i < arrayAllNumbers.length; i++) {
       sum += arrayAllNumbers[i]; //suma = suma + arrayAllNumbers[i];
     }
-    console.log(sum);
+   // console.log(sum);
     let casiAcabamos = sum % 10;
     if (casiAcabamos == 0) {
       return true
@@ -62,23 +62,37 @@ const validator = {
   },
 
   maskify: function (cardNumber) {
-    let otrosNumeros = cardNumber.slice(0, 12);
-    //  console.log(otrosNumeros, "otronumeros");
-    let remplazo = cardNumber.slice(0, -4);
-    //   console.log(remplazo, "reemplazo")
-    let numerosEnmascarados = cardNumber.replace(remplazo, "#".repeat(otrosNumeros.length));
-    //  console.log(numerosEnmascarados);
+if (cardNumber.length>=4) {
+  return cardNumber
+}
+else {
+    let otrosNumeros = cardNumber.slice(-4);
+   console.log(otrosNumeros)
+    let reemplazo = cardNumber.slice(0,-4);
+   console.log(reemplazo)
+    let numerosEnmascarados = cardNumber.replace(reemplazo, "#".repeat(reemplazo.length));
+     console.log(numerosEnmascarados);
     return numerosEnmascarados;
+}
+    //   return numerosEnmascarados;
+  }
 
-    /*
+ 
+
+  
+  /*
+  .replace((/[^A-Z\d-]/g,"#"))
+  }
     PLAN B
         function (cardNumber) {
         let numerosOcultos = cardNumber.split(""); //planB separo los numeros
         let pasoDos= numerosOcultos.map ((valor, posicion) =>
         posicion<cardNumber.length-4?"#":valor).join("");
         return pasoDos
+        let reemplazoDos= cardNumber.slice(-4)
+    console.log(reemplazo);
+    console.log(reemplazoDos);
     */
-  }
 }
 
 export default validator;
