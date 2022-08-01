@@ -1,14 +1,7 @@
-/*
-let digitos = (numeroInvertido.split("")).map(Number);
-console.log(digitos);
-for (let i = 0; i < digitos.length; i + 2) {
-  let pares = digitos[i]*2
-  console.log(pares + "pares")
-}
-*/
+
 const validator = {
   isValid: function (cardNumber) {
-    // console.log(typeof cardNumber); te devuelve un Strings
+    // console.log(typeof cardNumber); te devuelve el tipo de dato primitivo con el que estas trabajando
     let reverseNumber = cardNumber.split("").reverse().join(""); //
     /* const arrayString = [...reverseNumber]; /*Spreadarray solo estoy clonando. Si no lo usas y solo v1=v2 tu array original se ve afectado. 
      Tiene mas uso: Fusionar, clonar, Iterables a matriz, puede convertir un objeto-set- a matriz*,___otroque no recuerdº
@@ -90,5 +83,4 @@ const validator = {
     console.log(reemplazoDos);
     */
 }
-
 export default validator;
