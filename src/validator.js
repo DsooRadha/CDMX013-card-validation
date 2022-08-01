@@ -36,6 +36,7 @@ const validator = {
         arrayAllNumbers.push(numberDigits);
         // console.log(numberDigits, "impar");
       }
+      //  console.log(numberDigits)
     }
     // console.log(arrayAllNumbers, "AllNumbers");
     /*
@@ -51,7 +52,7 @@ const validator = {
     for (let i = 0; i < arrayAllNumbers.length; i++) {
       sum += arrayAllNumbers[i]; //suma = suma + arrayAllNumbers[i];
     }
-   // console.log(sum);
+    // console.log(sum);
     let casiAcabamos = sum % 10;
     if (casiAcabamos == 0) {
       return true
@@ -62,24 +63,19 @@ const validator = {
   },
 
   maskify: function (cardNumber) {
-if (cardNumber.length>=4) {
-  return cardNumber
-}
-else {
-    let otrosNumeros = cardNumber.slice(-4);
-   console.log(otrosNumeros)
-    let reemplazo = cardNumber.slice(0,-4);
-   console.log(reemplazo)
-    let numerosEnmascarados = cardNumber.replace(reemplazo, "#".repeat(reemplazo.length));
-     console.log(numerosEnmascarados);
-    return numerosEnmascarados;
-}
-    //   return numerosEnmascarados;
+ /*   if (cardNumber.length >= 4) {
+      return cardNumber
+    }
+    else {*/
+      // let otrosNumeros = cardNumber.slice(-4);
+      // jconsole.log(otrosNumeros)
+      let reemplazo = cardNumber.slice(0, -4);
+      console.log(reemplazo)
+      let numerosEnmascarados = cardNumber.replace(reemplazo, "#".repeat(reemplazo.length));
+      console.log(numerosEnmascarados);
+      return numerosEnmascarados;
+   // }
   }
-
- 
-
-  
   /*
   .replace((/[^A-Z\d-]/g,"#"))
   }

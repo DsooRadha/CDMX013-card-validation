@@ -44,7 +44,7 @@ botonDeReintentar.addEventListener("click", function (e) {
 );
 
 let configurandoInput= document.getElementById("espacioParaElNumeroDeTarjeta");
-configurandoInput.addEventListener("keypress", soloNumeros, false);
+configurandoInput.addEventListener("keypress", soloNumeros);
 
 function soloNumeros(e){
   var key = configurandoInput.event ? e.which : e.keyCode;  //? si : sino
@@ -55,19 +55,8 @@ function soloNumeros(e){
 }
 /* 
 
-
-
-let configurandoInput= document.getElementById("espacioParaElNumeroDeTarjeta");
-configurandoInput.addEventListener("keypress", soloNumeros, false);
-
-function soloNumeros(e){
-  var key = configurandoInput.event ? e.which : e.keyCode;
-  if (key < 48 || key > 57) {
-    e.preventDefault();
-  }
 let configurandoInput =document.getElementById("espacioParaElNumeroDeTarjeta");
 configurandoInput.addEventListener("keypress", soloNumeros)
-
 function soloNumeros(e) {
   let value = e.target.value;
   e.target.value = value.replace(/[^A-Z\d-]/g,"");
