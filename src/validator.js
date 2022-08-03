@@ -56,16 +56,11 @@ const validator = {
   },
 
   maskify: function (cardNumber) {
- /*   if (cardNumber.length >= 4) {
-      return cardNumber
-    }
-    else {*/
-      // let otrosNumeros = cardNumber.slice(-4);
-      // jconsole.log(otrosNumeros)
+ 
       let reemplazo = cardNumber.slice(0, -4);
-      console.log(reemplazo)
+     // console.log(reemplazo)
       let numerosEnmascarados = cardNumber.replace(reemplazo, "#".repeat(reemplazo.length));
-      console.log(numerosEnmascarados);
+      //console.log(numerosEnmascarados);
       return numerosEnmascarados;
    // }
   }

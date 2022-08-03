@@ -1,9 +1,5 @@
 import validator from './validator.js';
-
-//console.log(validator);
-
 let botonDeValidar = document.getElementById("botonDeValidar");
-
 botonDeValidar.addEventListener("click", function (e) { //parametro de una funcion
     //El parámetro (e) se pasa automáticamente de javascript a su función cuando agrega un detector de eventos. 
     //Representa el elemento que se vio afectado, 
@@ -54,7 +50,7 @@ function soloNumeros(e){
   }
 }
 /* 
-
+PLAN B
 let configurandoInput =document.getElementById("espacioParaElNumeroDeTarjeta");
 configurandoInput.addEventListener("keypress", soloNumeros)
 function soloNumeros(e) {

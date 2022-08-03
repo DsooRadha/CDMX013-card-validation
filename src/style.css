@@ -137,6 +137,21 @@ p.ptitle {
     font-weight: bold;
 }
 
+
+p.ptitlev{
+    font-family: 'Galindo';
+    font-size: 25px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+p.ptitler{
+    font-family: 'Galindo';
+    font-size: 25px;
+    font-weight: bold;
+    color:brown;
+}
+
 p.p1 {
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 25px;
