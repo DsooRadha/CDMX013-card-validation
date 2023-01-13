@@ -205,11 +205,12 @@ p.p2 {
     border-radius: 8px;
 }
 
-#pieDePagina {
+footer {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-    margin-top: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    margin:-10px;
 }
 
 a {

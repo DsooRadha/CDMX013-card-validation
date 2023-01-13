@@ -1,7 +1,7 @@
 # **CARD VALIDATION**
 Se ingresa el número de una tarjeta en un input tex, y a ese valor se le aplica el algoritmo de Luhm si el resultado es valido el usuario puede continuar con su compra. Si es una tarjeta no valida, se le pide que ingrese otra tarjeta o lo vuelva a intentar. Ademas de enmascararse el numero de la tarjeta exceptuando los ultimos cuatro digitos
 
-![pantallaPrincipal](proyectouno.jpg)
+![pantallaPrincipal](./images/proyectouno.jpg)
 
 # INVESTIGACION UX
 ## **HARI OM - YOGA EN LINEA**

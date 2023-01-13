@@ -1,4 +1,5 @@
 import validator from './validator.js';
+
 let botonDeValidar = document.getElementById("botonDeValidar");
 botonDeValidar.addEventListener("click", function (e) { //parametro de una funcion
     //El parámetro (e) se pasa automáticamente de javascript a su función cuando agrega un detector de eventos. 

@@ -12,13 +12,10 @@
 
 <body>
   <header></header>
-  <main></main>
-
-  <div id="padre">
+  <main id="padre">
     <div id="portada">
-      <img src="portadahariom.jpg" style="width:100%">
+      <img src="./images/portadahariom.jpg" style="width:100%">
     </div>
-
     <div id="menuDeBotones">
       <div><button class="botonRojo" type="button">NOSOTROS</button></div>
       <div><button class="botonRojo" type="button">HORARIOS</button></div>
@@ -38,12 +35,12 @@
           <p class="p1Sub">$800 mxn mensuales</p>
         </div>
       </div>
-
       <div id="columnaDos">
         <p class="ptitle">Paso 2. VALIDA TU TARJETA</p>
         <form>
-           <img src="card.png" style="width:50%"><br>
-          <label><input id="espacioParaElNumeroDeTarjeta" type="text" maxlength="16" minlength="16"
+          <img src="./images/card.png" style="width:50%"><br>
+          <label>
+            <input id="espacioParaElNumeroDeTarjeta" type="text" maxlength="16" minlength="16"
               placeholder="Ingresa tu número AQUI" pattern="[0-9]+"> </label>
           <p id="mensajeIncorrecto"></p>
           <p><button id="botonDeValidar" type="button"> VALIDAR </button></p>
@@ -55,7 +52,7 @@
         <p class="ptitler">EL NUMERO ES INVALIDO</p>
         <p id="numeroEnmascarado"></p>
         <p class="p2">PRUEBA CON OTRA TARJETA</p>
-        <img src="anjalimudra.png" style="width:23%">
+        <img src="./images/anjalimudra.png" style="width:23%">
         <p><button id="reintentar" type="reset"> REINTENTAR </button></p>
       </div>
 
@@ -63,19 +60,18 @@
         <br>
         <p class="ptitlev">¡¡¡TU TARJETA HA SIDO VALIDADA!!!</p>
         <p class="p2" id="numeroEnmascaradoDos"></p>
-        <img class="tarjetavalida" src="experimentoloto.png" style="width:23%">
+        <img class="tarjetavalida" src="./images/experimentoloto.png" style="width:23%">
         <p><button id="continuar" type="button"> CONTINUAR </button></p>
       </div>
     </div>
-    <div id="pieDePagina">
+   
       <footer>
         <a href="https://www.blancoyoga.com/terminos-y-condiciones/">TERMINOS Y CONDICIONES</a>
         <a>|</a>
         <a href="https://www.blancoyoga.com/aviso-de-privacidad/">AVISO DE PRIVACIDAD</a>
       </footer>
-    </div>
 
-  </div>
+  </main>
   <script src="index.js" type="module"></script>
 </body>
 
