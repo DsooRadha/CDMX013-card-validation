@@ -40,3 +40,7 @@ De modo tal que sus servicios al ser completamente en linea, se vuelve incongrue
 
  >_"LOKAH SAMASTAH SUKHINO BHAVANTU"_  
  >¡QUE TODOS LOS SERES DE TODOS LOS UNIVERSOS SEAN FELICES Y PROSPEROS!
+
+### **DEPLOY**
+
+https://dsooradha.github.io/CDMX013-card-validation/src/
